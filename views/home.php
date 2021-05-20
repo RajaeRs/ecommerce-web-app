@@ -24,7 +24,10 @@ if(isset($_POST["cat_id"])){
                 <div class="col-md-6 mb-2">
                     <div class="card h-100 bg-white rounded p-2">
                         <div class="card-header bg-light">
-                            <h3 class="card-title">
+                            <form id="form" method="post" action="<?php echo BASE_URL;?>show">
+                                <input type="hidden" name="product_id" id="product_id">
+                            </form>
+                            <h3 class="card-title" onclick="submitForm(<?php echo $product['product_id'];?>)" >
                                 <?php
                                     echo $product['product_title'];
                                 ?>
@@ -59,6 +62,12 @@ if(isset($_POST["cat_id"])){
                     endforeach;
                 ?>
                 <?php
+                    else :
+                ?>
+                <div class="alert alert-info">
+                    aucun produit trouvé
+                </div>
+                <?php
                     endif;
                 ?>
             </div>      
@@ -75,7 +84,7 @@ if(isset($_POST["cat_id"])){
                         <form id="catPro" method="post" action="<?php echo BASE_URL;?>">
                             <input type="hidden" name="cat_id" id="cat_id">
                         </form>
-                        <a onclick="getCatProducts(<?php echo $category['cat_id'];?>)" href="#" class="btn btn-link">
+                        <a onclick="getCatProducts(<?php echo $category['cat_id'];?>)" class="btn btn-link">
                             <?php
                                 echo $category['cat_title'];
                             ?>
