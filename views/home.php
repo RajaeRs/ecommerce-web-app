@@ -1,14 +1,14 @@
-//hatta haja man desing maratab9a ok 
-
-
 <?php
 
-$data = new ProductsController();
-$products = $data->getAllProducts();
 $categories = new CategoriesController();
 $categories = $categories->getAllCategories();
-
-
+if(isset($_POST["cat_id"])){
+    $products = new ProductsController();
+    $products = $products->getProductsByCategory($_POST['cat_id']);
+}else{
+    $data = new ProductsController();
+    $products = $data->getAllProducts();
+}
 ?>
 
 <div class="container">
@@ -72,10 +72,18 @@ $categories = $categories->getAllCategories();
                     foreach($categories as $category) :
                 ?>
                     <li class="list-group-item text-center">
-                        <a href="#" class="btn btn-link">
+                        <form id="catPro" method="post" action="<?php echo BASE_URL;?>">
+                            <input type="hidden" name="cat_id" id="cat_id">
+                        </form>
+                        <a onclick="getCatProducts(<?php echo $category['cat_id'];?>)" href="#" class="btn btn-link">
                             <?php
                                 echo $category['cat_title'];
                             ?>
+                            (<?php
+                                $productsByCat = new ProductsController();
+                                $productsByCat = $productsByCat->getProductsByCategory($category['cat_id']);
+                                echo count($productsByCat);
+                            ?>)
                         </a>
                     </li>
                 <?php

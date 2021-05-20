@@ -10,13 +10,13 @@ class Product{
     static public function getProductByCat($data){
         $id = $data['id'];
         try{
-            $stmt = DB::connect()->prepare('SELECT * FROM products WERE product_category_id = :id');
+            $stmt = DB::connect()->prepare('SELECT * FROM products WHERE product_category_id = :id');
             $stmt->execute(array(":id" => $id));
             return $stmt->fetchAll();
             $stmt->close();
-            $stmt = null;
+            $stmt =null;
         }catch(PDOException $ex){
-            echo "erreur ".$ex->getMessage();
+            echo "erreur " .$ex->getMessage();
         }
     }
 }
