@@ -7,6 +7,7 @@ require_once("./bootstrap.php");
 spl_autoload_register('autoload');
 
 function autoload($class_name){
+    
     $array_paths = array(
         'database/',
         'app/classes/',
