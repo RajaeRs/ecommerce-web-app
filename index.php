@@ -6,7 +6,7 @@ require_once './controllers/HomeController.php';
 
 $home = new HomeController();
 
-$pages = ['home','cart','dashboard','updateProduct','deleteProduct','addProduct','emptyCart','show','cancelCart','register','login','checkout','logout','products','orders','addOrder'];
+$pages = ['home','cart','dashboard','updateProduct','deleteProduct','addProduct','emptycart','show','cancelcart','register','login','checkout','logout','products','orders','addOrder'];
 
 if(isset($_GET['page'])){
     if(in_array($_GET['page'],$pages)){

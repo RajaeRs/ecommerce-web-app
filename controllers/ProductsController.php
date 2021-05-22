@@ -23,4 +23,10 @@ class ProductsController{
             return $product;
         }
     }
+    public function emptyCart($id,$price){
+        unset($_SESSION["products_".$id]);
+        $_SESSION["count"] -= 1;
+        $_SESSION["totaux"] -= $price;
+        Redirect::to("cart");
+    }
 }
