@@ -11,7 +11,7 @@ $pages = ['home','cart','dashboard','updateProduct','deleteProduct','addProduct'
 if(isset($_GET['page'])){
     if(in_array($_GET['page'],$pages)){
         $page = $_GET['page'];
-        if($page === "dashboard" || $page === "deleteProduct" || $page === "addProduct" || $page === "products" || $page === "orders"){
+        if($page === "dashboard" || $page === "deleteProduct" || $page === "updateProduct" || $page === "addProduct" || $page === "products" || $page === "orders"){
             if(isset($_SESSION['admin']) && $_SESSION['admin'] == true){
                 $admin = new AdminController();
                 $admin->index($page);

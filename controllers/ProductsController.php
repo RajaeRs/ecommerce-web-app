@@ -56,29 +56,29 @@ class ProductsController{
         }
     }
 
-    // public function updateProduct(){
-    //     if(isset($_POST["submit"])){
-    //         $oldImage = $_POST["product_current_image"];
-    //         $data = array(
-    //             "product_id" => $_POST["product_id"],
-    //             "product_title" => $_POST["product_title"],
-    //             "product_description" => $_POST["product_description"],
-    //             "product_quantity" => $_POST["product_quantity"],
-    //             "short_desc" => $_POST["short_desc"],
-    //             "product_image" => $this->uploadPhoto($oldImage),
-    //             "old_price" => $_POST["old_price"],
-    //             "product_price" => $_POST["product_price"],
-    //             "product_category_id" => $_POST["product_category_id"],
-    //         );
-    //         $result = Product::editProduct($data);
-    //         if($result === "ok"){
-    //             Session::set("success","Produit modifié");
-    //             Redirect::to("products");
-    //         }else{
-    //             echo $result;
-    //         }
-    //     }
-    // }
+    public function updateProduct(){
+        if(isset($_POST["submit"])){
+            $oldImage = $_POST["product_current_image"];
+            $data = array(
+                "product_id" => $_POST["product_id"],
+                "product_title" => $_POST["product_title"],
+                "product_description" => $_POST["product_description"],
+                "product_quantity" => $_POST["product_quantity"],
+                "short_desc" => $_POST["short_desc"],
+                "product_image" => $this->uploadPhoto($oldImage),
+                "old_price" => $_POST["old_price"],
+                "product_price" => $_POST["product_price"],
+                "product_category_id" => $_POST["product_category_id"],
+            );
+            $result = Product::editProduct($data);
+            if($result === "ok"){
+                Session::set("success","Produit modifié");
+                Redirect::to("products");
+            }else{
+                echo $result;
+            }
+        }
+    }
 
     public function uploadPhoto($oldImage = null){
         $dir = "public/uploads";
