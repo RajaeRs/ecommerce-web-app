@@ -28,7 +28,7 @@
             <a class="dropdown-item" href="#"><?php echo $_SESSION["fullname"];?></a>
             <a class="dropdown-item" href="<?php echo BASE_URL;?>logout">Déconnexion</a>
             <?php if(isset($_SESSION["admin"]) && $_SESSION["admin"] == true):?>
-            <a class="dropdown-item" href="<?php echo BASE_URL;?>dashboard">Admin <span class="sr-only">(current)</span></a>
+            <a class="dropdown-item" href="<?php echo BASE_URL;?>dashboard">Admin</a>
             <?php endif;?> 
           <?php else:?>  
             <a class="dropdown-item" href="<?php echo BASE_URL;?>register">Inscription</a>

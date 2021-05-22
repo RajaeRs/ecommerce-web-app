@@ -17,7 +17,7 @@
                         </div>
                         <div class="card-img-top">
                             <img width="100%" 
-                            src="<?php echo $product->product_image;?>" alt="" class="img-fluid rounded">
+                            src="./public/uploads/<?php echo $product->product_image;?>" alt="" class="img-fluid rounded">
                         </div>
                         <div class="card-body">
                             <p class="card-text">

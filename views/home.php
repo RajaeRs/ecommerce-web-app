@@ -34,7 +34,7 @@ if(isset($_POST["cat_id"])){
                             </h3>
                         </div>
                         <div class="card-img-top">
-                            <img src="<?php echo $product['product_image'];?>" alt="" class="img-fluid">
+                            <img src="./public/uploads/<?php echo $product["product_image"];?>" alt="" class="img-fluid">
                         </div>
                         <div class="card-body">
                             <?php

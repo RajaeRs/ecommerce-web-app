@@ -12,7 +12,7 @@ if(isset($_GET['page'])){
     if(in_array($_GET['page'],$pages)){
         $page = $_GET['page'];
         if($page === "dashboard" || $page === "deleteProduct" || $page === "addProduct" || $page === "products" || $page === "orders"){
-            if(isset($_SESSION['admin']) && $_SESSION['admin'] === true){
+            if(isset($_SESSION['admin']) && $_SESSION['admin'] == true){
                 $admin = new AdminController();
                 $admin->index($page);
             }else{

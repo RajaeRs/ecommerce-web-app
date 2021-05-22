@@ -1,10 +1,10 @@
 <?php
 
 class OrdersController{
-    // public function getAllOrders(){
-    //     $orders = Order::getAll();
-    //     return $orders;
-    // }
+    public function getAllOrders(){
+        $orders = Order::getAll();
+        return $orders;
+    }
     public function addOrder($data){
         $result = Order::createOrder($data);
         if($result === "ok"){
