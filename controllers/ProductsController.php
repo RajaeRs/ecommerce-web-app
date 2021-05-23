@@ -95,18 +95,18 @@ class ProductsController{
         return $oldImage;
     }
 
-    // public function removeProduct(){
-    //     if(isset($_POST["delete_product_id"])){
-    //         $data = array(
-    //             "id" => $_POST["delete_product_id"]
-    //         );
-    //         $result = Product::deleteProduct($data);
-    //         if($result === "ok"){
-    //             Session::set("success","Produit supprimé");
-    //             Redirect::to("products");
-    //         }else{
-    //             echo $result;
-    //         }
-    //     }
-    // }
+    public function removeProduct(){
+        if(isset($_POST["delete_product_id"])){
+            $data = array(
+                "id" => $_POST["delete_product_id"]
+            );
+            $result = Product::deleteProduct($data);
+            if($result === "ok"){
+                Session::set("success","Produit supprimé");
+                Redirect::to("products");
+            }else{
+                echo $result;
+            }
+        }
+    }
 }

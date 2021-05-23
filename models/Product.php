@@ -88,23 +88,23 @@ class Product{
         $stmt = null;
     }
 
-    // static public function deleteProduct($data){
-    //     $id = $data['id'];
-    //     try{
-    //         $stmt = DB::connect()->prepare('DELETE FROM products WHERE product_id = :id');
-    //         $stmt->execute(array(":id" => $id));
-    //         $product = $stmt->fetch(PDO::FETCH_OBJ);
-    //         if($stmt->execute()){
-    //             return 'ok';
-    //         }else{
-    //             return 'error';
-    //         }
-    //         $stmt->close();
-    //         $stmt =null;
-    //     }catch(PDOException $ex){
-    //         echo "erreur " .$ex->getMessage();
-    //     }
-    // }
+    static public function deleteProduct($data){
+        $id = $data['id'];
+        try{
+            $stmt = DB::connect()->prepare('DELETE FROM products WHERE product_id = :id');
+            $stmt->execute(array(":id" => $id));
+            $product = $stmt->fetch(PDO::FETCH_OBJ);
+            if($stmt->execute()){
+                return 'ok';
+            }else{
+                return 'error';
+            }
+            $stmt->close();
+            $stmt =null;
+        }catch(PDOException $ex){
+            echo "erreur " .$ex->getMessage();
+        }
+    }
 }
 
 
