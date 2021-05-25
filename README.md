@@ -112,3 +112,74 @@ Les objets impliqués dans l'opération sont répertoriés de gauche à droite e
 Un diagramme de classes UML décrit les structures d'objets et d'informations utilisées sur notre site web, à la fois en interne et en communication avec ses utilisateurs. Il décrit les informations sans faire référence à une implémentation particulière. Ses classes et relations peuvent être implémentées de nombreuses manières, comme les tables de bases de données, les nœuds XML ou encore les compositions d'objets logiciel.
 
 ![UML-diagramme de classe](https://user-images.githubusercontent.com/75434277/117879117-19a4c780-b296-11eb-8a94-5651cca9bcff.png)
+
+
+
+
+
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+
+
+
+
+# Processus de travaille
+
+## Identification et dénombrement des Tâches :
+
+### La répartition des taches 
+
+![taches](https://user-images.githubusercontent.com/75434277/119431267-2f8ca080-bd0a-11eb-9aa8-48d541ae67eb.png)
+
+J'ai faire le travaille d'une durée d'un Moi du 24 AVRIL au 23 MAI
+
+### Diagramme de Gantt
+
+![diagramme gantt](https://user-images.githubusercontent.com/75434277/119431184-0835d380-bd0a-11eb-93fc-52b8bd81333c.png)
+
+## Organisation de travaille :
+
+j'ai utiliser Trello comme outille de gestion .
+
+![trello](https://user-images.githubusercontent.com/75434277/119431826-29e38a80-bd0b-11eb-91b5-1ec2c05e28ab.png)
+
+# Capture écran de quelque page :
+
+ ![home](https://user-images.githubusercontent.com/75434277/119435494-27d0fa00-bd12-11eb-8d46-3e10fae667d7.png)
+
+la page d'accueil
+
+![visiteur](https://user-images.githubusercontent.com/75434277/119435604-5ea71000-bd12-11eb-9bf2-5032082a7f5e.png)
+
+les possibilité d'utilisation d'un visiteur 
+
+![inscription](https://user-images.githubusercontent.com/75434277/119435674-8c8c5480-bd12-11eb-90ac-5395e5955920.png)
+
+page d'inscription 
+
+![produit](https://user-images.githubusercontent.com/75434277/119435736-aa59b980-bd12-11eb-8f3a-1e35c29b3f52.png)
+
+![panier](https://user-images.githubusercontent.com/75434277/119435765-ba719900-bd12-11eb-9308-4b1eaff04f05.png)
+
+![pay paypal](https://user-images.githubusercontent.com/75434277/119435790-ca897880-bd12-11eb-86e7-20d5f8e25511.png)
+
+le processus d'achat
+
+![nav-admin](https://user-images.githubusercontent.com/75434277/119435840-eab93780-bd12-11eb-800f-cb94081fbd94.png)
+
+navigation pour l'admin
+
+![gestion-ad](https://user-images.githubusercontent.com/75434277/119435893-03c1e880-bd13-11eb-9b37-bf8f287b067b.png)
+
+les types de gestion possible 
+
+![gestion-produit](https://user-images.githubusercontent.com/75434277/119435946-20f6b700-bd13-11eb-946a-b7afe02a1158.png)
+
+![commandes](https://user-images.githubusercontent.com/75434277/119435964-2bb14c00-bd13-11eb-931b-69937e303a45.png)
+
+![categories](https://user-images.githubusercontent.com/75434277/119435980-323fc380-bd13-11eb-8677-355586731d1b.png)
+
+### Dernière mot est la base de donnée de cette application web 
+
+![data-base](https://user-images.githubusercontent.com/75434277/119436192-9ebac280-bd13-11eb-8648-1e0eb8ed4e5b.png)
+
